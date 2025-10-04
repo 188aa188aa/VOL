@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STU无畏契约调研</title>
+</head>
+<style>
+    .submit-btn {
+        background-color: greenyellow;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        min-width: 100px;
+    }
+
+    .reset-btn {
+        background-color: red;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        min-width: 100px;
+    }
+
+    .text-container {
+        background-color: white;
+        width: 80%;
+        max-width: 700px;
+        padding: 30px 40px; 
+        border-radius: 8px;
+        font-family: "Microsoft YaHei", sans-serif;
+        color: #333;
+        line-height: 1.8;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url("./1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0;
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+</style>
+<body>
+    <div class="text-container">
+    <form action="">
+        <label for="wow">1.请输入ID：</label>
+        <input type="text" id="wow">
+        <br>
+        2.选择性别：
+        <br>
+        <input type="radio" name="xingbie" required>男
+        <input type="radio" name="xingbie" required>女
+        <input type="radio" name="xingbie" required>保密
+        <br>
+        3.擅长位置：
+        <br>
+        <input type="checkbox" name="weizhi">一突
+        <input type="checkbox" name="weizhi">二突
+        <input type="checkbox" name="weizhi">先锋
+        <input type="checkbox" name="weizhi">烟位
+        <input type="checkbox" name="weizhi">哨位
+        <br>
+        4.当前段位：
+        <br>
+        <select required>
+            <option>黑铁</option>
+            <option>青铜</option>
+            <option>白银</option>
+            <option>黄金</option>
+            <option>铂金</option>
+            <option>钻石</option>
+            <option>超凡</option>
+            <option>神话</option>
+            <option>赋能</option>
+        </select>
+        <br>
+        5.个性签名：
+        <textarea cols="50" rows="6"></textarea>
+        <br>
+        <input type="submit" class="submit-btn">
+        <input type="reset" class="reset-btn">
+
+    </form>
+    </div>
+</body>
+</html>

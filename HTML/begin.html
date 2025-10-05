@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STU无畏契约调研</title>
+</head>
+<style>
+    .submit-btn {
+        background-color: greenyellow;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        min-width: 100px;
+    }
+
+    .reset-btn {
+        background-color: red;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        min-width: 100px;
+    }
+
+    .text-container {
+        background-color: white;
+        width: 80%;
+        max-width: 700px;
+        padding: 30px 40px; 
+        border-radius: 8px;
+        font-family: "Microsoft YaHei", sans-serif;
+        color: #333;
+        line-height: 1.8;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url("./1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0;
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    h1{
+        margin-bottom: 2px;
+        font-size: 16px;
+    }
+    
+</style>
+<body>
+    <div class="text-container">
+    <form action="finish.html" id="aaa">
+        <label for="wow"><h1>1.请输入ID：</h1></label>
+        <input type="text" id="wow" name="mingzi" required>
+        <br>
+        2.选择性别：
+        <br>
+        <input type="radio" name="xingbie" required>男
+        <input type="radio" name="xingbie" required>女
+        <input type="radio" name="xingbie" required>保密
+        <br>
+        3.擅长位置：
+        <br>
+        <input type="checkbox" name="weizhi">一突
+        <input type="checkbox" name="weizhi">二突
+        <input type="checkbox" name="weizhi">先锋
+        <input type="checkbox" name="weizhi">烟位
+        <input type="checkbox" name="weizhi">哨位
+        <br>
+        当前段位：
+        <br>
+        <select required name="duanwei">
+            <option>黑铁</option>
+            <option>青铜</option>
+            <option>白银</option>
+            <option>黄金</option>
+            <option>铂金</option>
+            <option>钻石</option>
+            <option>超凡</option>
+            <option>神话</option>
+            <option>赋能</option>
+        </select>
+        <br>
+        <label for="qwq"><h1>个性签名：</h1></label>
+        <textarea cols="50" rows="6" id="qwq" name="qianming"></textarea>
+        <br>
+        <input type="submit" class="submit-btn">
+        <input type="reset" class="reset-btn">
+
+    </form>
+    </div>
+    <script>
+            const formData = new FormData(this);
+            const data = {};
+        //     formData.forEach((value,key)=>{
+        //         data[key] = value;
+        //     });
+        //     localStorage.setItem('formData',JSON.stringify(data));
+            window.location.href = 'finish.html';
+        // });
+    </script>
+</body>
+</html>
